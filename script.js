@@ -1,9 +1,17 @@
-const myBtn = document.getElementById("clickBtn");
-const countCounter = document.getElementById("count");
+const input = document.getElementById("todoInput")
+const addButton = document.getElementById("addBtn")
+const list = document.getElementById("todoList")
 
-let count = 0;
+addButton.addEventListener("click", () => {
+  const task = input.value;
 
-myBtn.addEventListener("click", () => {
-    count++;
-    countCounter.textContent = count;
+  if (task !== "") {
+      const li = document.createElement("li");
+      li.textContent = task;
+      list.appendChild(li);
+      input.value = ""; // Clear input
+  } else {
+     alert("Please enter a task.");
+  }
+  
 });
