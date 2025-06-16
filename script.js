@@ -1,13 +1,8 @@
-function Person(name, age) {
-		this.name = name;
-		this.age = age;
-		this.greet = function() {
-				console.log("Hi, I'm " + this.name);
-		};
-}
+const myBtn = document.getElementById("myBtn");
 
-let person1 = new Person("Alice", 25);
-let person2 = new Person("Bob", 30);
+function changeColor(event) {
+  event.target.style.backgroundColor = "red";
+  console.log(event)
+} 
 
-person1.greet(); // Output: Hi, I'm Alice
-person2.greet(); // Output: Hi, I'm Bob
+myBtn.addEventListener("click", changeColor);
