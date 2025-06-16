@@ -1,8 +1,9 @@
-const myBtn = document.getElementById("myBtn");
+const myBtn = document.getElementById("clickBtn");
+const countCounter = document.getElementById("count");
 
-function changeColor(event) {
-  event.target.style.backgroundColor = "red";
-  console.log(event)
-} 
+let count = 0;
 
-myBtn.addEventListener("click", changeColor);
+myBtn.addEventListener("click", () => {
+    count++;
+    countCounter.textContent = count;
+});
