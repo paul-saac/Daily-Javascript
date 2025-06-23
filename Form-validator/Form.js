@@ -6,6 +6,7 @@ const message = document.getElementById("message");
 form.addEventListener("submit", function(event) {
   event.preventDefault(); // Stop form from refreshing the page
 
+  
   if (username.value === "" || email.value === "") {
     message.textContent = "Please fill in all fields.";
     message.style.color = "orange";
