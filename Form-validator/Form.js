@@ -3,6 +3,7 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 const password = document.getElementById("asd");
+const identifier = document.getElementById("ddasd");
 
 form.addEventListener("submit", function(event) {
   event.preventDefault(); // Stop form from refreshing the page
